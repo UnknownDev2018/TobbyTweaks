@@ -2,6 +2,10 @@
 echo.
 echo Nvidia Boost FPS v2
 
+
+:: Crear directorio si no existe
+md C:\Tobby
+
 :: Descargar nvidiaProfileInspector.zip
 curl -g -k -L -# -o "%temp%\nvidiaProfileInspector.zip" "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/latest/download/nvidiaProfileInspector.zip" >nul 2>&1
 
@@ -13,9 +17,6 @@ chcp 437 >nul 2>&1
 
 :: Extraer nvidiaProfileInspector.zip
 powershell -NoProfile Expand-Archive '%temp%\nvidiaProfileInspector.zip' -DestinationPath 'C:\Tobby\' >nul 2>&1
-
-:: Crear directorio si no existe
-md C:\Tobby
 
 :: Ejecutar nvidiaProfileInspector sin mostrar prompts
 start "" /wait "C:\Tobby\nvidiaProfileInspector.exe" "C:\Tobby\Tobby_bestprofile.nip" /silent
