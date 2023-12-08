@@ -1,6 +1,6 @@
 @echo off
 echo.
-echo Nvidia Boost FPS
+echo Nvidia Boost FPS v2
 
 :: Descargar nvidiaProfileInspector.zip
 curl -g -k -L -# -o "%temp%\nvidiaProfileInspector.zip" "https://github.com/Orbmu2k/nvidiaProfileInspector/releases/latest/download/nvidiaProfileInspector.zip" >nul 2>&1
