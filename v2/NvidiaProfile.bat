@@ -1,6 +1,6 @@
 @echo off
 echo.
-echo Nvidia Boost FPS v2
+echo Nvidia Boost FPS v3
 
 
 :: Crear directorio si no existe
